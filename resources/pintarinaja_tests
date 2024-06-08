@@ -1,0 +1,12 @@
+pintarinaja_tests/
+    tests/
+        test_cases/
+            register_test.robot
+            login_test.robot
+            kyc_test.robot
+    resources/
+        keywords/
+            custom_keywords.robot
+    results/
+    .gitignore
+    robotfile.txt

@@ -1,0 +1,13 @@
+*** Settings ***
+Library           SeleniumLibrary
+Library           webdriver_manager
+
+*** Variables ***
+${BASE_URL}       https://beta.pintarinaja.co.id
+${LOGIN_URL}      https://beta.pintarinaja.co.id/login
+${REGISTER_URL}   https://beta.pintarinaja.co.id/register
+${BROWSER}        chrome
+
+*** Test Teardown ***
+    Close Browser
+

@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Robot Framework: Run Tests",
+            "type": "robotframework-lsp",
+            "request": "launch",
+            "target": "${workspaceFolder:pintarinaja_tests}/tests/test_cases",
+            "terminal": "integrated"
+        }
+    ]
+}

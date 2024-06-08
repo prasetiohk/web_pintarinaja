@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240608 10:08:38.862" rpa="false" schemaversion="4">
+<suite id="s1" name="Kyc Test" source="c:\Users\Asus\web_pintarinaja\tests\kyc_test.robot">
+<test id="s1-t1" name="User Can Complete KYC Successfully" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${KYC_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240608 10:08:40.412" level="FAIL">Variable '${KYC_URL}' not found.</msg>
+<status status="FAIL" starttime="20240608 10:08:40.399" endtime="20240608 10:08:40.418"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=identity_number</arg>
+<arg>123456789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240608 10:08:40.421" endtime="20240608 10:08:40.422"/>
+</kw>
+<kw name="Upload File">
+<arg>id=identity_document</arg>
+<arg>path/to/identity_document.jpg</arg>
+<status status="NOT RUN" starttime="20240608 10:08:40.436" endtime="20240608 10:08:40.437"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=submit_kyc_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240608 10:08:40.437" endtime="20240608 10:08:40.438"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>id=kyc_success_message</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20240608 10:08:40.439" endtime="20240608 10:08:40.440"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20240608 10:08:40.441" endtime="20240608 10:08:40.441"/>
+</kw>
+<doc>Test to verify KYC process</doc>
+<status status="FAIL" starttime="20240608 10:08:40.347" endtime="20240608 10:08:40.443">Variable '${KYC_URL}' not found.</status>
+</test>
+<status status="FAIL" starttime="20240608 10:08:38.902" endtime="20240608 10:08:40.447"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Kyc Test">Kyc Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240608 10:08:39.052" level="ERROR">Error in file 'c:\Users\Asus\web_pintarinaja\tests\kyc_test.robot' on line 2: Error in file 'c:\Users\Asus\robotfile.txt' on line 11: Unrecognized section header '*** Test Teardown ***'. Valid sections: 'Settings', 'Variables', 'Keywords' and 'Comments'.</msg>
+<msg timestamp="20240608 10:08:40.307" level="ERROR">Error in file 'c:\Users\Asus\web_pintarinaja\tests\kyc_test.robot' on line 6: Setting variable '${KYC_URL}' failed: Variable '${BASE_URL}' not found.</msg>
+</errors>
+</robot>
